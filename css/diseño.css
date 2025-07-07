@@ -1,28 +1,65 @@
+body{
+  background-color: #F8F8F8;
 
-.header {
+}
+
+
+.flexbox-header{
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 16px;
-  background-color: #fff;
-  border-bottom: 1px solid #ccc;
+  background-color: rgb(186, 151, 219);
+ width: 100%;
+ height: 500px;
+  padding: 20px;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: stretch;
 }
 
-.nombre_logo {
-  font-size: 16px;
-  font-weight: bold;
-  color: #333;
-}
-.logo {
-  height: 32px;
+.caja{
+  border: 1px solid black;
+  background-color: lightblue;
+  color: black;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  line-height: 200px; 
+  margin: 5px;
+  
 }
 
-.greeting {
-  justify-content: space-between;
-  margin: 20px;
-  font-size: 18px;
-  color: #333;
+.nombre{
+background-color: blue;
+order: 1;
+flex-grow: 5;
+flex-basis: 50%;
 }
-.saludo_usuario {
-  font-weight: bold;
+
+.logo{
+  background-color: green;
+  order: 2;
+  flex-grow: 2;
+}
+
+/*
+.logo{
+  border: 1px solid black;
+  background-color: lightblue;
+  color: black;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  line-height: 100px; 
+}
+.nombre-empresa{
+  border: 1px solid black;
+  background-color: bisque;
+  color:black ;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
 }
